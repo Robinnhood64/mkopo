@@ -110,7 +110,19 @@ function check_eligibility() {
             text: 'Enter Mobile Number',
             icon: "warning"
         });
-    } else {
+    } else if (phone_number.length < 10){
+        Swal.fire({
+            title: 'Error',
+            text: 'Enter a Valid Mobile Number',
+            icon: "warning"
+        });
+    }else if (phone_number.length > 13){
+        Swal.fire({
+            title: 'Error',
+            text: 'Enter a Valid Mobile Number',
+            icon: "warning"
+        });
+    }else{
         
         Swal.fire({
             text: 'Your Loan Limit is 10,000',

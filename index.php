@@ -97,8 +97,14 @@ emergencies
 <div class="signin-none tab-100 col-md-12">
 <select class="form-control" name="loan_type_id" id="loan_type_id" autocomplete="off" required>
 <option value="">Select Loan Type</option>
-<option value="1">Education Loan</option>
+<option value="1">Business Loan</option>
 <option value="2" selected>Emergency Loan</option>
+<option value="3">Education Loan</option>
+<option value="4">Medication Loan</option>
+<option value="5">Personal Loan</option>
+<option value="6">Farming Loan</option>
+<option value="7">Vacation Loan</option>
+<option value="8">Other</option>
 </select>
 </div>
 </div>

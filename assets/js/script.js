@@ -113,13 +113,13 @@ function check_eligibility() {
     } else if (phone_number.length < 10){
         Swal.fire({
             title: 'Error',
-            text: 'Enter a Valid Mobile Number',
+            text: 'Enter a Valid Phone Number',
             icon: "warning"
         });
     }else if (phone_number.length > 13){
         Swal.fire({
             title: 'Error',
-            text: 'Enter a Valid Mobile Number',
+            text: 'Enter a Valid Phone Number',
             icon: "warning"
         });
     }else{

@@ -113,7 +113,7 @@ function check_eligibility() {
     } else {
         
         Swal.fire({
-            text: 'Success',
+            text: 'Your Loan Limit is 10,000',
             icon: "success",
             buttons: false,
         }).then((result)=>{

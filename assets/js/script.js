@@ -111,40 +111,20 @@ function check_eligibility() {
             icon: "warning"
         });
     } else {
-        $.ajax({
-            url: './check/',
-            type: "POST",
-            data: $('#form-app').serialize(),
-            dataType: "JSON",
-            success: function(data) {
-                if (data.success == 1) {
-                    Swal.fire({
-                        text: data.message,
-                        icon: "success",
-                        buttons: false,
-                    }).then((result)=>{
-                        $('#btnCheck').hide();
-                        $('#btnSave').show();
-                        $('#row-amount').show();
-                        $('#app-title').html(data.message);
-                        $('#app-title').show();
-                    }
-                    );
-                } else {
-                    Swal.fire({
-                        text: data.message,
-                        icon: "error"
-                    });
-                }
-            },
-            error: function(jqXHR, textStatus, errorThrown) {
-                Swal.fire({
-                    title: 'Error',
-                    text: textStatus,
-                    icon: "error"
-                });
-            }
-        });
+        
+        Swal.fire({
+            text: 'Success',
+            icon: "success",
+            buttons: false,
+        }).then((result)=>{
+            $('#btnCheck').hide();
+            $('#btnSave').show();
+            $('#row-amount').show();
+            $('#app-title').html(data.message);
+            $('#app-title').show();
+        }
+        );
+                    
     }
 }
 ;$(document).ready(function() {

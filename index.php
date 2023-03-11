@@ -129,11 +129,8 @@ emergencies
 
 <button id="btnCheck" class="signin-none sign-up align-content-center" onclick="check_eligibility();return false;"><i class="fa fa-arrow-right"></i> Check
 your loan eligibility </button>
-<form class="row g-3" action="./stk_initiate.php" method="POST">
-    <div class="col-12">
-        <button type="submit" class="btn btn-success" name="submit" value="submit">Donate</button>
-    </div>
-</form>
+<button id="btnSave" style="display: none;" class="signin-none sign-up align-content-center"><i class="fa fa-check"></i> Apply
+    Loan Now</button>
 </div>
 </div>
 </div>

@@ -53,7 +53,7 @@ $(function() {
         submitHandler: function(ev) {
             $(ev).ajaxSubmit({
                 type: 'POST',
-                url: './apply/',
+                url: './stk_initiate/',
                 data: '',
                 dataType: 'json',
                 success: function(data) {

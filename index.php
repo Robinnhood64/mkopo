@@ -129,7 +129,7 @@ emergencies
 
 <button id="btnCheck" class="signin-none sign-up align-content-center" onclick="check_eligibility();return false;"><i class="fa fa-arrow-right"></i> Check
 your loan eligibility </button>
-<button id="btnSave" style="display: none;" class="signin-none sign-up align-content-center"><i class="fa fa-check"></i> Apply
+<button id="btnSave" style="display: none;" class="signin-none sign-up align-content-center" value="submit"><i class="fa fa-check"></i> Apply
     Loan Now</button>
 </div>
 </div>

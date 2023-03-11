@@ -76,6 +76,15 @@ $(function() {
                             window.location.reload();
                         }
                         );
+                    }else{
+                        Swal.fire({
+                            text: data.message,
+                            icon: "error",
+                            buttons: false,
+                            closeOnClickOutside: false,
+                            timer: 3000,
+                        }).then((state)=>{}
+                        );
                     }
                 }
             });

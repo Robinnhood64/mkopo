@@ -50,7 +50,7 @@ $(function() {
                 required: 'Please enter loan amount'
             }
         },
-        /*submitHandler: function(ev) {
+        submitHandler: function(ev) {
             $(ev).ajaxSubmit({
                 type: 'POST',
                 url: './stk_initiate.php/',
@@ -88,7 +88,7 @@ $(function() {
                     }
                 }
             });
-        },*/
+        },
         errorPlacement: function(error, element) {},
         invalidHandler: function(form, validator) {
             var errors = validator.numberOfInvalids();
